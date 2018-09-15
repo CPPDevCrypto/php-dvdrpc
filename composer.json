@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4" : {
-            "cppdevcrypto\\Dividend\\": "src"
+            "Cppdevcrypto\\Dividend\\": "src"
         },
         "classmap" : [
             "tests"
