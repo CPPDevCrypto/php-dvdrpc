@@ -1,7 +1,7 @@
 # Simple Dividend JSON-RPC client.
 
 ## Installation
-Run ```php composer.phar require denpa/php-dividendrpc``` in your project directory or add following lines to composer.json
+Run ```php composer.phar require cppdevcrypto/php-dividendrpc``` in your project directory or add following lines to composer.json
 ```javascript
 "require": {
     "cppdevcrypto/php-dividendrpc": "^2.0"
