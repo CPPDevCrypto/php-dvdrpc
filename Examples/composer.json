@@ -1,0 +1,11 @@
+{
+    "require": {
+        "cppdevcrypto/php-dvdrpc": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/CPPDevCrypto/php-dvdrpc.git"
+        }
+    ]
+}
