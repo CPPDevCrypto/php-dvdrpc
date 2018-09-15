@@ -1,17 +1,10 @@
-# Simple Dividend JSON-RPC client based on GuzzleHttp
-
-[![Latest Stable Version](https://poser.pugx.org/denpa/php-dividendrpc/v/stable)](https://packagist.org/packages/denpa/php-dividendrpc)
-[![License](https://poser.pugx.org/denpa/php-dividendrpc/license)](https://packagist.org/packages/denpa/php-dividendrpc)
-[![Build Status](https://travis-ci.org/denpamusic/php-dividendrpc.svg)](https://travis-ci.org/denpamusic/php-dividendrpc)
-[![Code Climate](https://codeclimate.com/github/denpamusic/php-dividendrpc/badges/gpa.svg)](https://codeclimate.com/github/denpamusic/php-dividendrpc)
-[![Code Coverage](https://codeclimate.com/github/denpamusic/php-dividendrpc/badges/coverage.svg)](https://codeclimate.com/github/denpamusic/php-dividendrpc/coverage)
-[![Join the chat at https://gitter.im/php-dividendrpc/Lobby](https://badges.gitter.im/php-dividendrpc/Lobby.svg)](https://gitter.im/php-dividendrpc/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Simple Dividend JSON-RPC client.
 
 ## Installation
 Run ```php composer.phar require denpa/php-dividendrpc``` in your project directory or add following lines to composer.json
 ```javascript
 "require": {
-    "denpa/php-dividendrpc": "^2.0"
+    "cppdevcrypto/php-dividendrpc": "^2.0"
 }
 ```
 and run ```php composer.phar install```.
@@ -30,7 +23,7 @@ Create new object with url as parameter
 
 use Cppdevcrypto\Dividend\Client as DividendClient;
 
-$Dividendd = new DividendClient('http://rpcuser:rpcpassword@localhost:8332/');
+$Dividendd = new DividendClient('http://rpcuser:rpcpassword@localhost:19998/');
 ```
 or use array to define your Dividendd settings
 ```php
@@ -45,13 +38,13 @@ use Cppdevcrypto\Dividend\Client as DividendClient;
 $Dividendd = new DividendClient([
     'scheme'   => 'http',                 // optional, default http
     'host'     => 'localhost',            // optional, default localhost
-    'port'     => 8332,                   // optional, default 8332
-    'user'     => 'rpcuser',              // required
+    'port'     => 19998,                  // optional, default 19998
+    'user'     => 'dividendcashrpc',      // required
     'password' => 'rpcpassword',          // required
     'ca'       => '/etc/ssl/ca-cert.pem'  // optional, for use with https scheme
 ]);
 ```
-Then call methods defined in [Dividend Core API Documentation](https://dividend.org/en/developer-reference#dividend-core-apis) with magic:
+
 ```php
 /**
  * Get block info.
@@ -140,7 +133,6 @@ $Dividendd->requestAsync(
 ```
 
 ## Multi-Wallet RPC
-You can use `wallet($name)` function to do a [Multi-Wallet RPC call](https://en.dividend.it/wiki/API_reference_(JSON-RPC)#Multi-wallet_RPC_calls):
 ```php
 /**
  * Get wallet2.dat balance.
@@ -186,7 +178,7 @@ This product is distributed under MIT license.
 ## Donations
 
 If you like this project, please consider donating:<br>
-**DVD**: 3L6dqSBNgdpZan78KJtzoXEk9DN3sgEQJu<br>
-**Bech32**: bc1qyj8v6l70c4mjgq7hujywlg6le09kx09nq8d350
+**DVD**: DKyuMrEnnwCnYNU1b58fHoh34CKcstqrxL<br>
+**BTC**: 1BkThcnmn4jyst6kyMdLbHvR86yx2xidhR
 
 ❤Thanks for your support!❤
