@@ -1,0 +1,33 @@
+{
+    "name": "cppdevcrypto/php-dvdrpc",
+    "type": "library",
+    "description": "Dividend Cash JSON-RPC client based on GuzzleHttp",
+    "keywords": ["dvd", "dividend.cash", "api","jsonrpc","guzzle"],
+    "homepage": "https://github.com/cppdevcrypto/php-dvdrpc",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Indie Lavender",
+            "email": "indie@devcrypto.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7 || ^6.4 || ^7.0"
+    },
+    "autoload": {
+        "psr-4" : {
+            "cppdevcrypto\\Dividend\\": "src"
+        },
+        "classmap" : [
+            "tests"
+        ],
+        "files" : [
+            "src/functions.php"
+        ]
+    }
+}
